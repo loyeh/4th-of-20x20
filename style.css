@@ -75,11 +75,13 @@ input,
   width: 100px;
   font-size: 18px;
   color: black;
+  border: 1px solid #aaa;
 }
 .secound_col {
   font-family: Arial, Helvetica, sans-serif;
   /* font-weight: bold; */
   font-size: 1.2em;
+
   right: 0;
 }
 #target_currency_quantity {
