@@ -193,6 +193,13 @@ async function getData(url) {
     return Promise.reject("ERROR");
   }
 }
+window.addEventListener("load", (event) => {
+  const url = `https://v6.exchangerate-api.com/v6/b9ffce6b13208d09c9d8195d/pair/${base_currency.value}/${target_currency.value}`;
+  getData(url).then((response) => {
+    showResult(response, base_currency_quantity.value);
+  });
+});
+
 base_currency.addEventListener("input", (event) => {
   const url = `https://v6.exchangerate-api.com/v6/b9ffce6b13208d09c9d8195d/pair/${event.target.value}/${target_currency.value}`;
   getData(url).then((response) => {
