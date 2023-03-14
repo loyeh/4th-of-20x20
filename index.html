@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<div class="main">
+  <img src="gearDollar.png" alt="dollar in gear icon">
+  <h2>Exchange Rate Calculator</h2>
+  <p>Choose the currency and the amounts to gt the exchange rate</p>
+  <div class="data_container" id="data_container">
+
+    <!-- 1st row -->
+    <div class="row">
+      <select name="firstCurrency" id="base_currency">
+      </select>
+      <input class="secound_col" id="base_currency_quantity" type="number" min="1" value="1">
+    </div>
+
+    <!-- 2nd row -->
+    <div class="row">
+      <button id="swap" onclick="swap()">Swap</button>
+      <p class="secound_col" id="result">1 USD = 0.898665 EUR</p>
+    </div>
+
+    <!-- 3rd row -->
+    <div class="row">
+      <select name="secoundCurrency" id="target_currency">
+      </select>
+      <div class="secound_col" id="target_currency_quantity">--:--</div>
+
+    </div>
+  </div>
+</div>
+
+</html>

@@ -1,0 +1,7 @@
+.DS_Store
+Screen Shot *.png
+test/*
+grid.js
+img/.DS_Store
+*.jpg
+*.mp4
